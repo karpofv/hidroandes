@@ -1,0 +1,30 @@
+<?php
+
+ $hostp="dbsiga.unellez.edu.ve";
+        $userp="lector";
+        $passp="l3ct0r#";
+        
+        $link1=pg_connect("host=$hostp user=$userp password=$passp dbname=SIMA") or die("error");
+        require('fpdf/fpdf.php');
+
+ 
+	       //Instanciation of inherited class
+	       $pdf=new PDF();
+	    
+	       $pdf->settitle('Recibo de Pago UNELLEZ '.$fecha);
+	       $pdf->setCreator('Ruben Jimenez CTSI-UNELLEZ');
+	       $pdf->SetAuthor('Ruben Jimenez CTSI-UNELLEZ');
+	       $pdf->setSubject('Recibo de Pago de los trabajadores de la UNELLEZ, CTSI-UNELLEZ');
+	       $pdf->SetLeftMargin(30);
+	       $pdf->SetRightMargin(30);
+	       $pdf->SetAutoPageBreak(1 , 80);
+          $pdf->AliasNbPages();
+		    $pdf->AddPage();
+          $pdf->SetFont('Times','B',12);
+          $pdf->Cell(35,5,utf8_decode("Cédula:"),0,0,'L');
+          $pdf->output("ejemplo.pdf");
+             
+
+     
+        
+        ?>
