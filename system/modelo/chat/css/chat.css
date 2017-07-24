@@ -15,6 +15,12 @@
 	border-left:1px solid #f99d39;
 }
 
+.chatboxblink {
+	background-color: #176689;
+	border-right:1px solid #176689;
+	border-left:1px solid #176689;
+}
+
 .chatboxcontent {
 	font-family: arial,sans-serif;
 	font-size: 13px;
@@ -22,6 +28,9 @@
 	height:200px;
 	width:209px;
 	overflow-y:auto;
+	overflow-x:auto;
+	padding:7px;
+	border-left:1px solid #cccccc;
 	border-right:1px solid #cccccc;
 	border-bottom:1px solid #eeeeee;
 	background-color: #ffffff;

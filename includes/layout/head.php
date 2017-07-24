@@ -20,6 +20,12 @@
 
     <link href="<?php echo $ruta_base;?>assets/theme/css/animate.css" rel="stylesheet">
     <link href="<?php echo $ruta_base;?>assets/theme/css/style.css" rel="stylesheet">
+
+    <!-- Mainly scripts -->
+    <script src="<?php echo $ruta_base;?>assets/theme/js/jquery-2.1.1.js"></script>
+    <script src="<?php echo $ruta_base;?>assets/theme/js/bootstrap.min.js"></script>
+    <script src="<?php echo $ruta_base;?>assets/theme/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="<?php echo $ruta_base;?>assets/theme/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>    
 </head>
 
 <body>

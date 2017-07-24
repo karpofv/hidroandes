@@ -2,19 +2,6 @@
 </div>
 </div>
 
-    <!-- Mainly scripts -->
-    <script src="<?php echo $ruta_base;?>assets/theme/js/jquery-2.1.1.js"></script>
-    <script src="<?php echo $ruta_base;?>assets/theme/js/bootstrap.min.js"></script>
-    <script src="<?php echo $ruta_base;?>assets/theme/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="<?php echo $ruta_base;?>assets/theme/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-
-    <!-- Flot -->
-    <script src="<?php echo $ruta_base;?>assets/theme/js/plugins/flot/jquery.flot.js"></script>
-    <script src="<?php echo $ruta_base;?>assets/theme/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
-    <script src="<?php echo $ruta_base;?>assets/theme/js/plugins/flot/jquery.flot.spline.js"></script>
-    <script src="<?php echo $ruta_base;?>assets/theme/js/plugins/flot/jquery.flot.resize.js"></script>
-    <script src="<?php echo $ruta_base;?>assets/theme/js/plugins/flot/jquery.flot.pie.js"></script>
-
     <!-- Peity -->
     <script src="<?php echo $ruta_base;?>assets/theme/js/plugins/peity/jquery.peity.min.js"></script>
     <script src="<?php echo $ruta_base;?>assets/theme/js/demo/peity-demo.js"></script>
@@ -57,6 +44,16 @@
 
         });
     </script>
+<script>
+    function cerrar() {
+        $("#alerta-msg").fadeOut(1000);
+        $("#alerta-msg").addClass("collapse");
+    }
+
+    function cerrarmodal() {
+        $("#ventanaVer").html('');
+    }
+</script>
 </body>
 
 <!-- Mirrored from webapplayers.com/inspinia_admin-v2.6.2.1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Oct 2016 05:31:23 GMT -->
